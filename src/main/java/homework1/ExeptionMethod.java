@@ -36,6 +36,8 @@ public class ExeptionMethod {
         return str.length();
     }
 
+
+
 }
 
 
