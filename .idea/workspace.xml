@@ -4,17 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491f5f59-cf45-46a6-bee3-6f1fa98227d3" name="Changes" comment="Реализуйте 3 метода, чтобы в каждом из них получить разные исключения&#10;Посмотрите на код, и подумайте сколько разных типов исключений вы тут сможете получить? public static int sum2d(String[][] arr){ int sum = 0; for (int i = 0; i &lt; arr.length; i++) { for (int j = 0; j &lt; 5; j++) { int val = Integer.parseInt(arr[i][j]); sum += val; } } return sum; }&#10;Реализуйте метод, принимающий в качестве аргументов два целочисленных массива, и возвращающий новый массив, каждый элемент которого равен частному элементов двух входящих массивов в той же ячейке. Если длины массивов не равны, необходимо как-то оповестить пользователя. Важно: При выполнении метода единственное исключение, которое пользователь может увидеть -">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework2/FloatNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework2/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework2/RefactorArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework2/WorkExceptions.java" afterDir="false" />
+    <list default="true" id="491f5f59-cf45-46a6-bee3-6f1fa98227d3" name="Changes" comment="Home Work 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/ACheckData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/ACheckDataProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/ACheckFullName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/ACheckQuantity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/ADataParseProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/AFileCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/AFileWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/AFindTheSameFileName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/AGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/abstractClasses/APresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/checkInputData/CCheckBirthday.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/checkInputData/CCheckDataProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/checkInputData/CCheckFullName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/checkInputData/CCheckQuantity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/checkInputData/CCheckSex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/parseData/CDataParseProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/ui/CGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/workWithFile/CFileCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/workWithFile/CFileWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/classes/workWithFile/CFindTheSameFileName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/BirthdayFormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/CheckQuantityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/CheckSexException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/FileCreateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/FullNameContainsDigitException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/FullNameEmptyValueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/FullNameReadFromDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/GetDataArrayException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/GetDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/IncorrectSexValuesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/MyFileCreateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/ParseDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/ParseDataToIntegerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/exceptions/TheSameFileWritingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/ICheckBirthday.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/ICheckElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/ICheckFullName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/ICheckQuantity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/ICheckSex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/ICreateFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/IFindTheSameFileName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/IGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/IGetInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/IParseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/IRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/base/interfaces/IWriteToFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/data/Berezovski.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/data/Ivaniv.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/data/Valetov.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework3/data/Березовская.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
@@ -58,20 +109,7 @@
     &quot;two.files.diff.last.used.folder&quot;: &quot;J:/GBУчёба/Studies/Java/Java_GB/Java_HW/Introduction_to_Exceptions_GB&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.NullStrException">
-    <configuration name="CodeReview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework1.CodeReview" />
-      <module name="Introduction_to_Exceptions_GB.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="DivisionOfTwoArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework1.DivisionOfTwoArrays" />
       <module name="Introduction_to_Exceptions_GB.main" />
@@ -91,6 +129,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homework2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework3.Main" />
+      <module name="Introduction_to_Exceptions_GB.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.NullStrException" />
         <item itemvalue="Application.RefactorArray" />
         <item itemvalue="Application.FloatNumber" />
         <item itemvalue="Application.DivisionOfTwoArrays" />
-        <item itemvalue="Application.CodeReview" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686253492558</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Home Work 2">
+      <created>1686853047680</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686853047680</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +232,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Реализуйте 3 метода, чтобы в каждом из них получить разные исключения&#10;Посмотрите на код, и подумайте сколько разных типов исключений вы тут сможете получить? public static int sum2d(String[][] arr){ int sum = 0; for (int i = 0; i &lt; arr.length; i++) { for (int j = 0; j &lt; 5; j++) { int val = Integer.parseInt(arr[i][j]); sum += val; } } return sum; }&#10;Реализуйте метод, принимающий в качестве аргументов два целочисленных массива, и возвращающий новый массив, каждый элемент которого равен частному элементов двух входящих массивов в той же ячейке. Если длины массивов не равны, необходимо как-то оповестить пользователя. Важно: При выполнении метода единственное исключение, которое пользователь может увидеть -" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализуйте 3 метода, чтобы в каждом из них получить разные исключения&#10;Посмотрите на код, и подумайте сколько разных типов исключений вы тут сможете получить? public static int sum2d(String[][] arr){ int sum = 0; for (int i = 0; i &lt; arr.length; i++) { for (int j = 0; j &lt; 5; j++) { int val = Integer.parseInt(arr[i][j]); sum += val; } } return sum; }&#10;Реализуйте метод, принимающий в качестве аргументов два целочисленных массива, и возвращающий новый массив, каждый элемент которого равен частному элементов двух входящих массивов в той же ячейке. Если длины массивов не равны, необходимо как-то оповестить пользователя. Важно: При выполнении метода единственное исключение, которое пользователь может увидеть -" />
+    <MESSAGE value="Home Work 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home Work 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
